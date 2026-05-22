@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="장기봉의 전체 프로젝트 포트폴리오 페이지입니다. 실무 프로젝트와 개인 프로젝트를 한눈에 확인할 수 있습니다." />
+  <title>Projects | 장기봉 포트폴리오</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="메인으로 이동">
+        <span class="logo-text">KIBONG<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="works.html" class="nav-link active">Works</a></li>
+          <li><a href="index.html#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" aria-hidden="true">
+      <ul class="mobile-nav-list" role="list">
+        <li><a href="index.html#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="index.html#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="works.html" class="mobile-nav-link">Works</a></li>
+        <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="works-hero" aria-labelledby="works-page-title">
+      <div class="works-hero__bg" aria-hidden="true">
+        <div class="works-hero__blob works-hero__blob--1"></div>
+        <div class="works-hero__blob works-hero__blob--2"></div>
+      </div>
+
+      <div class="container works-hero__inner">
+        <div class="works-hero__content fade-up">
+          <span class="section-label">All Projects</span>
+          <h1 class="works-hero__title" id="works-page-title">
+            실무 경험과 개인 작업을<br />
+            프로젝트 단위로 정리했습니다.
+          </h1>
+          <p class="works-hero__desc">
+            공공·금융 SI, 그룹웨어 마이그레이션, 반응형 웹 구축, 개인 인터랙션 프로젝트까지<br />
+            장기봉의 실무 역량과 문제 해결 방식을 한 페이지에서 확인할 수 있습니다.
+          </p>
+
+          <div class="works-hero__meta" role="list" aria-label="프로젝트 통계">
+            <div class="works-hero__meta-item" role="listitem">
+              <strong>11+</strong>
+              <span>프로젝트</span>
+            </div>
+            <div class="works-hero__meta-item" role="listitem">
+              <strong>6년+</strong>
+              <span>실무 경력</span>
+            </div>
+            <div class="works-hero__meta-item" role="listitem">
+              <strong>75+</strong>
+              <span>단일 프로젝트 화면</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="project-archive" aria-labelledby="archive-title">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Archive</span>
+          <h2 class="section-title" id="archive-title">전체 프로젝트 아카이브</h2>
+          <p class="section-desc">실무 프로젝트 / 개인 프로젝트 / 비공개 프로젝트를 필터로 구분해서 볼 수 있습니다.</p>
+        </div>
+
+        <div class="project-filter fade-up" role="tablist" aria-label="프로젝트 필터">
+          <button class="project-filter__btn project-filter__btn--active" type="button" data-filter="all" role="tab" aria-selected="true">전체</button>
+          <button class="project-filter__btn" type="button" data-filter="company" role="tab" aria-selected="false">실무 프로젝트</button>
+          <button class="project-filter__btn" type="button" data-filter="personal" role="tab" aria-selected="false">개인 프로젝트</button>
+          <button class="project-filter__btn" type="button" data-filter="confidential" role="tab" aria-selected="false">비공개 프로젝트</button>
+        </div>
+
+        <div class="project-list">
+
+          <article class="project-card fade-up" data-category="company confidential" aria-labelledby="project-1-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--confidential">🔒 Confidential</span>
+              <span class="project-period">2025.10 – 2026.02</span>
+            </div>
+            <h3 class="project-card__title" id="project-1-title">한국앤컴퍼니 그룹웨어(ARENA) 차세대 전환</h3>
+            <p class="project-card__subtitle">위플즈 프리랜서 · 참여율 40%</p>
+            <p class="project-card__desc">
+              기존 Legacy 그룹웨어를 가온아이 기반 차세대 시스템으로 마이그레이션하면서,
+              화면 마크업 분석·재구성·신규 기능 UI 확장까지 수행한 프로젝트입니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>기존 화면 구조 분석 후 신규 구조에 맞게 마크업 재구성</li>
+              <li>신규 기능 추가에 따른 UI 구현 및 화면 확장 대응</li>
+              <li>UI 구조 정리를 통한 화면 일관성 및 유지보수성 향상</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#Groupware</span>
+              <span>#Migration</span>
+              <span>#UIRefactoring</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company confidential" aria-labelledby="project-2-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--confidential">🔒 Confidential</span>
+              <span class="project-period">2024.08 – 2024.10</span>
+            </div>
+            <h3 class="project-card__title" id="project-2-title">LG U+ 모바일 앱 리뉴얼</h3>
+            <p class="project-card__subtitle">㈜로얄시스템즈 · 화면 75개 · 참여율 약 75%</p>
+            <p class="project-card__desc">
+              대형 통신사 모바일 앱 화면 퍼블리싱 프로젝트로, 다양한 플랫폼 환경에서
+              일관된 레이아웃과 접근 가능한 UI 구현에 집중했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>Android / iOS / Mac / Windows 크로스플랫폼 대응</li>
+              <li>WebSquare 기반 화면 퍼블리싱 및 구조 최적화</li>
+              <li>화면 다수 운영에 맞는 컴포넌트 일관성 유지</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#WebSquare</span>
+              <span>#CrossBrowsing</span>
+              <span>#ResponsiveUI</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company confidential" aria-labelledby="project-3-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--confidential">🔒 Confidential</span>
+              <span class="project-period">2024.03 – 2024.06</span>
+            </div>
+            <h3 class="project-card__title" id="project-3-title">국민건강보험 시스템</h3>
+            <p class="project-card__subtitle">㈜로얄시스템즈 · 화면 85개</p>
+            <p class="project-card__desc">
+              공공기관 프로젝트 특성에 맞춰 웹 접근성 기준과 안정적인 화면 구조를 유지하며,
+              다수의 운영 화면을 퍼블리싱한 프로젝트입니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>공공기관 웹 접근성 기준 준수</li>
+              <li>대량 화면 퍼블리싱 및 구조 정리</li>
+              <li>운영·유지보수에 유리한 UI 패턴 정리</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#PublicSI</span>
+              <span>#Accessibility</span>
+              <span>#WebPublishing</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company confidential" aria-labelledby="project-4-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--confidential">🔒 Confidential</span>
+              <span class="project-period">2023.08 – 2023.12</span>
+            </div>
+            <h3 class="project-card__title" id="project-4-title">사학연금 차세대 시스템</h3>
+            <p class="project-card__subtitle">㈜로얄시스템즈 · 화면 25개</p>
+            <p class="project-card__desc">
+              금융·공공 환경의 UI 기준에 맞춰 안정적이고 일관된 퍼블리싱 구조를 적용한 프로젝트입니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>다수 화면 퍼블리싱 및 레이아웃 구조화</li>
+              <li>WebSquare 환경 실무 대응</li>
+              <li>표준화된 화면 패턴 유지</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#Pension</span>
+              <span>#EnterpriseUI</span>
+              <span>#StandardMarkup</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company confidential" aria-labelledby="project-5-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--confidential">🔒 Confidential</span>
+              <span class="project-period">2023.03 – 2023.06</span>
+            </div>
+            <h3 class="project-card__title" id="project-5-title">경찰청 정보화 시스템</h3>
+            <p class="project-card__subtitle">㈜로얄시스템즈 · 화면 30개</p>
+            <p class="project-card__desc">
+              보안성과 안정성이 중요한 공공 SI 환경에서 UI 구조를 정리하고 운영 가능한 형태로 퍼블리싱했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>다수 화면 퍼블리싱 및 구조 정리</li>
+              <li>운영 화면 중심의 유지보수성 고려</li>
+              <li>표준 준수 기반 UI 구현</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#GovProject</span>
+              <span>#SecurityAware</span>
+              <span>#StructuredUI</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company" aria-labelledby="project-6-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--company">실무 프로젝트</span>
+              <span class="project-period">2025.08 – 2025.09</span>
+            </div>
+            <h3 class="project-card__title" id="project-6-title">남성해운 회사소개 홈페이지 개편</h3>
+            <p class="project-card__subtitle">미래아이앤티 · 단독 퍼블리싱 · Role 100%</p>
+            <p class="project-card__desc">
+              회사소개 홈페이지 개편 프로젝트로 반응형 구현과 웹 표준 준수에 중점을 두고 단독 퍼블리싱을 수행했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>크로스브라우징 및 반응형 구현</li>
+              <li>웹 표준 가이드 준수</li>
+              <li>단독 퍼블리싱 기반 일정 관리</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#CorporateSite</span>
+              <span>#Responsive</span>
+              <span>#HTMLCSS</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.namsung.co.kr" target="_blank" rel="noopener noreferrer">사이트 보기</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company" aria-labelledby="project-7-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--company">실무 프로젝트</span>
+              <span class="project-period">2025.07 – 2025.08</span>
+            </div>
+            <h3 class="project-card__title" id="project-7-title">삼성노블라이프 사이트 구축</h3>
+            <p class="project-card__subtitle">앰플인터렉티브 · Role 25%</p>
+            <p class="project-card__desc">
+              프리미엄 상조·라이프케어 사이트 구축 프로젝트로, UI 일부 기능구현과 유지보수를 담당했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>SASS 기반 스타일 유지보수</li>
+              <li>Swiper 슬라이드 기능 구현</li>
+              <li>EJS / SASS / Webpack 환경 실무 경험</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#EJS</span>
+              <span>#SASS</span>
+              <span>#Swiper</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://samsungnoblelife.com/" target="_blank" rel="noopener noreferrer">사이트 보기</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company" aria-labelledby="project-8-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--company">실무 프로젝트</span>
+              <span class="project-period">2025.07 – 2025.08</span>
+            </div>
+            <h3 class="project-card__title" id="project-8-title">힘펠(Himpel) 글로벌 홈페이지 개편</h3>
+            <p class="project-card__subtitle">앰플인터렉티브 · Role 25%</p>
+            <p class="project-card__desc">
+              영문화 UI와 기능 구현, 반응형 대응, QA 수정까지 담당한 글로벌 웹사이트 개편 프로젝트입니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>영문화 UI 및 기능 구현</li>
+              <li>QA 피드백 기반 화면 수정</li>
+              <li>Spring Boot + Thymeleaf 환경 대응</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#Thymeleaf</span>
+              <span>#SpringBoot</span>
+              <span>#GlobalSite</span>
+            </div>
+            <div class="project-card__links project-card__links--double">
+              <a href="https://himpel.com/kr" target="_blank" rel="noopener noreferrer">KR 보기</a>
+              <a href="https://himpel.com/eng" target="_blank" rel="noopener noreferrer">ENG 보기</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="company" aria-labelledby="project-9-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--company">실무 프로젝트</span>
+              <span class="project-period">2025</span>
+            </div>
+            <h3 class="project-card__title" id="project-9-title">다우건축 메인화면 UI 퍼블리싱</h3>
+            <p class="project-card__subtitle">앰플인터렉티브 · 메인 페이지 담당</p>
+            <p class="project-card__desc">
+              건축 포트폴리오 사이트의 메인 화면을 중심으로 반응형 레이아웃과 갤러리 인터랙션을 구현했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>메인화면 UI 퍼블리싱</li>
+              <li>반응형 레이아웃 구조화</li>
+              <li>이미지 갤러리 인터랙션 구현</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#GalleryUI</span>
+              <span>#MainPage</span>
+              <span>#JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.daugroup.com/" target="_blank" rel="noopener noreferrer">사이트 보기</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="personal" aria-labelledby="project-10-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--personal">개인 프로젝트</span>
+              <span class="project-period">Personal</span>
+            </div>
+            <h3 class="project-card__title" id="project-10-title">The Parent Trap Still Cut Gallery</h3>
+            <p class="project-card__subtitle">영화 스틸컷 갤러리 프로젝트 · Role 100%</p>
+            <p class="project-card__desc">
+              디즈니 영화 ‘페어런트 트랩’의 감성을 웹으로 재해석한 개인 프로젝트로,
+              포스터 컬러를 활용한 직관적 갤러리 UI를 구현했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>영화 포스터 컨셉을 반영한 컬러 시스템</li>
+              <li>주요 명장면 중심의 갤러리 UI 구성</li>
+              <li>반응형 레이아웃 적용</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#Responsive</span>
+              <span>#Gallery</span>
+              <span>#MovieConcept</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="personal" aria-labelledby="project-11-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--personal">개인 프로젝트</span>
+              <span class="project-period">Personal</span>
+            </div>
+            <h3 class="project-card__title" id="project-11-title">Local Road Trip</h3>
+            <p class="project-card__subtitle">국내 이색 여행지 가이드 · Role 100%</p>
+            <p class="project-card__desc">
+              여행 매거진 스타일을 모티브로 한 에디토리얼 웹 프로젝트로,
+              컬러칩형 이미지 UI와 원페이지 스크롤 경험을 설계했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>잡지 스타일 레이아웃 구성</li>
+              <li>여행지별 컬러칩형 UI 표현</li>
+              <li>슬라이드 이미지 인터랙션</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#Editorial</span>
+              <span>#OnePage</span>
+              <span>#TravelUI</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" data-category="personal" aria-labelledby="project-12-title">
+            <div class="project-card__top">
+              <span class="project-badge project-badge--personal">개인 프로젝트</span>
+              <span class="project-period">Personal</span>
+            </div>
+            <h3 class="project-card__title" id="project-12-title">사랑의모임 포토부스</h3>
+            <p class="project-card__subtitle">Love Gathering Photo Booth · Role 100%</p>
+            <p class="project-card__desc">
+              행사형 포토부스를 웹상에 구현한 인터랙션 프로젝트로,
+              실제 촬영 경험과 유사한 UX를 목표로 설계했습니다.
+            </p>
+            <ul class="project-card__list" role="list">
+              <li>웹캠 연동 실시간 촬영 및 프리뷰</li>
+              <li>프레임 선택, 셔터 카운터, 플래시 효과 구현</li>
+              <li>촬영 후 QR 링크/저장 플로우 설계</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>#CameraAPI</span>
+              <span>#WebStorage</span>
+              <span>#InteractiveUX</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="archive-note">
+      <div class="container">
+        <div class="archive-note__box fade-up">
+          <h2>비공개 프로젝트 표기 기준</h2>
+          <p>
+            공공기관, 금융권, 그룹웨어 프로젝트 중 일부는 보안 및 NDA 이슈로 인해 URL 또는 상세 화면을 공개하지 않았습니다.
+            대신 수행 범위, 기술 환경, 역할, 구조 개선 포인트 위주로 정리했습니다. 필요 시 면접에서 상세 설명 가능합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <a href="index.html" class="footer__logo" aria-label="메인으로 이동">
+          KIBONG<span class="logo-dot">.</span>
+        </a>
+        <p class="footer__copy">© 2026 장기봉. Designed &amp; Built by Kibong Jang.</p>
+      </div>
+      <nav class="footer__nav" aria-label="푸터 메뉴">
+        <ul role="list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub 프로필">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="맨 위로 이동" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
