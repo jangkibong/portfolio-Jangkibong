@@ -1255,10 +1255,10 @@ button {
 .work-card__thumb-inner--green {
     background: linear-gradient(135deg, #065f46, #059669);
 }
-.work-card__thumb-inner.work3 {
+.work-card__thumb-inner.work5 {
     background-image: url(./images/love_gathering_photo.png);
 }
-.work-card__thumb-inner.work4 {
+.work-card__thumb-inner.work6 {
     background-image: url(./images/Local_Road_Trip.png);
 }
 
