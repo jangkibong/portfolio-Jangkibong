@@ -1258,6 +1258,9 @@ button {
 .work-card__thumb-inner.work2 {
     background-image: url(./images/himpel_eng.png);
 }
+.work-card__thumb-inner.work4 {
+    background-image: url(./images/scourt_mobile.png);
+}
 .work-card__thumb-inner.work5 {
     background-image: url(./images/love_gathering_photo.png);
 }
