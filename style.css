@@ -1255,6 +1255,9 @@ button {
 .work-card__thumb-inner--green {
     background: linear-gradient(135deg, #065f46, #059669);
 }
+.work-card__thumb-inner.work2 {
+    background-image: url(./images/himpel_eng.png);
+}
 .work-card__thumb-inner.work5 {
     background-image: url(./images/love_gathering_photo.png);
 }
