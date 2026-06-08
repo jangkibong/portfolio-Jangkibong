@@ -425,6 +425,29 @@
     const projectCards = document.querySelectorAll(".project-card[data-category]");
     if (!filterButtons.length || !projectCards.length) return;
 
+    // 필터별 개수 카운팅
+    const countProjects = (filter) => {
+        if (filter === "all") {
+            return projectCards.length;
+        }
+        return Array.from(projectCards).filter((card) => {
+            const categories = (card.dataset.category || "").split(/\s+/).filter(Boolean);
+            return categories.includes(filter);
+        }).length;
+    };
+
+    // 버튼의 카운트 텍스트 업데이트
+    const updateFilterCounts = () => {
+        filterButtons.forEach((btn) => {
+            const filter = btn.dataset.filter;
+            const count = countProjects(filter);
+            const countEl = btn.querySelector(".filter-count");
+            if (countEl) {
+                countEl.textContent = `(${count})`;
+            }
+        });
+    };
+
     const applyFilter = (filter) => {
         projectCards.forEach((card, index) => {
             const categories = (card.dataset.category || "").split(/\s+/).filter(Boolean);
@@ -456,6 +479,8 @@
         });
     });
 
+    // 초기화: 카운트 업데이트
+    updateFilterCounts();
     applyFilter("all");
 })();
 
