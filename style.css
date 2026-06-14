@@ -1258,6 +1258,9 @@ button {
 .work-card__thumb-inner.work2 {
     background-image: url(./images/himpel_eng.png);
 }
+.work-card__thumb-inner.work3 {
+    background-image: url(./images/samsung_galaxy_tips.jpg);
+}
 .work-card__thumb-inner.work4 {
     background-image: url(./images/scourt_mobile.png);
 }
@@ -1277,6 +1280,7 @@ button {
     font-weight: 700;
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.7);
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -1299,6 +1303,7 @@ button {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.875rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .work-card__overlay-btn {
